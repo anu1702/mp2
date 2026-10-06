@@ -1,0 +1,30 @@
+.nav {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text-h);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+}
+
+.link:hover {
+  background: var(--accent);
+  color: white;
+  border-color: transparent;
+}
+
+.active {
+  background: var(--accent);
+  color: white;
+  border-color: transparent;
+}
+
+.link.active:hover {
+  background: var(--text-h);
+  color: var(--bg);
+}

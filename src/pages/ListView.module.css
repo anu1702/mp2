@@ -1,0 +1,152 @@
+.page {
+  width: min(1080px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+  text-align: left;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  letter-spacing: -0.03em;
+}
+
+.header p {
+  margin: 0.4rem 0 0;
+  color: var(--text);
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: end;
+  margin-top: 1.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1 1 180px;
+}
+
+.field span {
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.field input,
+.field select,
+.order button {
+  font: inherit;
+  color: var(--text-h);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.6rem 0.75rem;
+}
+
+.field input {
+  width: 100%;
+}
+
+.order {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.order button {
+  cursor: pointer;
+  border-radius: 999px;
+}
+
+.order button:hover {
+  background: var(--accent);
+  color: white;
+  border-color: transparent;
+}
+
+.pressed {
+  background: var(--accent);
+  color: white;
+  border-color: transparent;
+}
+
+.order button.pressed:hover {
+  background: var(--text-h);
+  color: var(--bg);
+}
+
+.count,
+.empty,
+.error {
+  margin-top: 1rem;
+}
+
+.error {
+  color: #9b2c2c;
+}
+
+.list {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 0.9rem;
+  align-items: center;
+  padding: 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg);
+  color: inherit;
+  text-decoration: none;
+}
+
+.row:hover {
+  border-color: var(--accent);
+}
+
+.row img,
+.placeholder {
+  width: 72px;
+  height: 108px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: var(--code-bg);
+}
+
+.placeholder {
+  display: grid;
+  place-items: center;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.row h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.meta {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.2rem;
+  color: var(--accent);
+}
+
+.overview {
+  margin-top: 0.35rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
