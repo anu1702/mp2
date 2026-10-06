@@ -68,7 +68,7 @@
   border-color: transparent;
 }
 
-.pressed {
+.order button.pressed {
   background: var(--accent);
   color: white;
   border-color: transparent;
